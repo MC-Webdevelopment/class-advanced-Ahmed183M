@@ -150,12 +150,5 @@ fetch("./marvel.json").then(
             }
         }
         checkPowerButton.addEventListener("click", powerChecker);
-
-        console.log(characterlist.returnArray());
-
-        let search = characterlist.searchCharacter("MAN");
-        console.log(search);
-
-        console.log(characterlist.characters[0].checkAlign());
     }
 )
