@@ -292,9 +292,9 @@ fetch(URL)
                 leftHero.append(hero1Name);
                 leftHero.append(hero1HP);
                 leftHero.append(hero1HealthBar);
-                leftHero.append(hero1Attack);
-                leftHero.append(hero1AttackBar);
                 leftHero.append(hero1Speed);
+                leftHero.append(hero1AttackBar);
+                leftHero.append(hero1Attack);
                 leftHero.append(hero1Hits);
                 leftHero.append(hero1Damage);
                 leftHero.append(hero1Image);
@@ -302,9 +302,9 @@ fetch(URL)
                 rightHero.append(hero2Name);
                 rightHero.append(hero2HP);
                 rightHero.append(hero2HealthBar);
-                rightHero.append(hero2Attack);
-                rightHero.append(hero2AttackBar);
                 rightHero.append(hero2Speed);
+                rightHero.append(hero2AttackBar);
+                rightHero.append(hero2Attack);
                 rightHero.append(hero2Hits);
                 rightHero.append(hero2Damage);
                 rightHero.append(hero2Image);
