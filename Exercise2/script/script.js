@@ -126,29 +126,15 @@ class superHeroes {
             if (hp1 <= 0) {
                 const winnerText = document.createElement("h2");
                 winnerText.innerHTML =
-                    "👑👉<br>The Winner is " +
-                    hero2[0] +
-                    "!<br>With " +
-                    hp2 +
-                    " remaining HP!<br>Delivering " +
-                    hitCounter2 * attack2 +
-                    " Damage Points with " +
-                    hitCounter2 +
-                    " Hits!";
+                    "👑👉<br>The Winner is " + hero2[0] + "!<br>With " + hp2 + " remaining HP!<br>Delivering " +
+                    hitCounter2 * attack2 + " Damage Points with " + hitCounter2 + " Hits!";
                 winnerAnnounce.innerHTML = "";
                 winnerAnnounce.append(winnerText);
             } else if (hp2 <= 0) {
                 const winnerText = document.createElement("h2");
                 winnerText.innerHTML =
-                    "👈👑<br>The Winner is " +
-                    hero1[0] +
-                    "!<br>With " +
-                    hp1 +
-                    " remaining HP!<br>Delivering " +
-                    hitCounter1 * attack1 +
-                    " Damage Points with " +
-                    hitCounter1 +
-                    " Hits!";
+                    "👈👑<br>The Winner is " + hero1[0] + "!<br>With " + hp1 + " remaining HP!<br>Delivering " +
+                    hitCounter1 * attack1 + " Damage Points with " + hitCounter1 + " Hits!";
                 winnerAnnounce.innerHTML = "";
                 winnerAnnounce.append(winnerText);
             } else
@@ -184,17 +170,17 @@ fetch(URL)
         });
 
         const getHeroes = () => {
-            let heroes2get = heroList.showHeroes();
-            note.style.display = "none";
-            centerDiv.style.display = "none";
-            winnerAnnounce.innerHTML = "";
-
-            rightHero.innerHTML = "";
-            leftHero.innerHTML = "";
-
             if (selector1.value == -1 || selector2.value == -1) {
                 alert("Please choose two Superheroes!");
             } else {
+                let heroes2get = heroList.showHeroes();
+                note.style.display = "none";
+                centerDiv.style.display = "none";
+                winnerAnnounce.innerHTML = "";
+
+                rightHero.innerHTML = "";
+                leftHero.innerHTML = "";
+
                 const hero1Name = document.createElement("h3");
                 hero1Name.style.marginBottom = "0px";
 
@@ -272,20 +258,16 @@ fetch(URL)
                         hero1Name.innerHTML = "Name: " + hero.name;
                         hero1HP.innerHTML = "HP: " + hero.durability * 10;
                         hero1Attack.innerHTML = "Attack Damage: " + hero.combat;
-                        hero1Speed.innerHTML =
-                            "Attack Cooldown: " +
-                            map_range(hero.speed, 0, 100, 5, 1).toFixed(2) +
-                            "s";
+                        hero1Speed.innerHTML = "Attack Cooldown: " +
+                            map_range(hero.speed, 0, 100, 5, 1).toFixed(2) + "s";
                         hero1Image.setAttribute("src", hero.img);
                     }
                     if (selector2.value == hero.id) {
                         hero2Name.innerHTML = "Name: " + hero.name;
                         hero2HP.innerHTML = "HP: " + hero.durability * 10;
                         hero2Attack.innerHTML = "Attack Damage: " + hero.combat;
-                        hero2Speed.innerHTML =
-                            "Attack Cooldown: " +
-                            map_range(hero.speed, 0, 100, 5, 1).toFixed(2) +
-                            "s";
+                        hero2Speed.innerHTML = "Attack Cooldown: " +
+                            map_range(hero.speed, 0, 100, 5, 1).toFixed(2) + "s";
                         hero2Image.setAttribute("src", hero.img);
                     }
                 });

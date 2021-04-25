@@ -1,67 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>SuperHeroes Battle Simulator!</h1>
 
-    <lable>Choose two Superheroes:</lable>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
 
-    <select id="hero1">
-      <option value="-1">Choose Hero 1</option>
-    </select>
-    <span>VS.</span>
-    <select id="hero2">
-      <option value="-1">Choose Hero 2</option>
-    </select>
-    <button id="ready">Get Heroes Ready!</button>
+<body>
+  <h1>SuperHeroes Battle Simulator!</h1>
 
-    <lable>Choose Battle Speed:</lable>
+  <lable>Choose two Superheroes:</lable>
 
-    <select id="speed">
-      <option value="0.25">x0.25</option>
-      <option value="0.5">x0.5</option>
-      <option value="0.75">x0.75</option>
-      <option selected="selected" value="1">x1</option>
-      <option value="2">x2</option>
-      <option value="3">x3</option>
-      <option value="4">x4</option>
-      <option value="5">x5</option>
-    </select>
+  <select id="hero1">
+    <option value="-1">Choose Hero 1</option>
+  </select>
+  <span>VS.</span>
+  <select id="hero2">
+    <option value="-1">Choose Hero 2</option>
+  </select>
+  <button id="ready">Get Heroes Ready!</button>
 
-    <p id="note">
-      *NOTE: Please Wait Untill the Battle Finishes after you click START
-      BATTLING!<br />You will cause a glitch if you press the button again
-      before the current Battle is over!
-    </p>
+  <lable>Choose Battle Speed:</lable>
 
-    <br />
-    <br />
-    <br />
+  <select id="speed">
+    <option value="0.25">x0.25</option>
+    <option value="0.5">x0.5</option>
+    <option value="0.75">x0.75</option>
+    <option selected="selected" value="1">x1</option>
+    <option value="2">x2</option>
+    <option value="3">x3</option>
+    <option value="4">x4</option>
+    <option value="5">x5</option>
+  </select>
 
-    <div
-      id="battleground"
-      style="display: flex; justify-content: space-evenly; align-items: center"
-    >
-      <div
-        id="leftHero"
-        style="display: flex; flex-direction: column; align-items: center"
-      ></div>
-      <div id="centerDiv" style="display: none; text-align: center">
-        <button id="fight" style="height: 100px; width: 100px">
-          START BATTLING!
-        </button>
-        <div id="winnerAnnounce"></div>
-      </div>
-      <div
-        id="rightHero"
-        style="display: flex; flex-direction: column; align-items: center"
-      ></div>
+  <p id="note">
+    *NOTE: Please Wait Untill the Battle Finishes after you click START
+    BATTLING!<br />You will cause a glitch if you press the button again
+    before the current Battle is over!
+  </p>
+
+  <br />
+  <br />
+  <br />
+
+  <div id="battleground" style="display: flex; justify-content: space-evenly; align-items: center">
+    <div id="leftHero" style="display: flex; flex-direction: column; align-items: center"></div>
+    <div id="centerDiv" style="display: none; text-align: center">
+      <button id="fight" style="height: 100px; width: 100px">
+        START BATTLING!
+      </button>
+      <div id="winnerAnnounce"></div>
     </div>
-  </body>
-  <script src="./script/script.js"></script>
+    <div id="rightHero" style="display: flex; flex-direction: column; align-items: center"></div>
+  </div>
+</body>
+<script src="./script/script.js"></script>
+
 </html>
